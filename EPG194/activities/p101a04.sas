@@ -12,8 +12,11 @@
 *       How many rows are in the canadashoes data?        *;
 ***********************************************************;
 
-data canadashoes set sashelp.shoes;
-	where region="Canada;
-	Profit=Sales-Returns;run;
+data canadashoes;
+	set sashelp.shoes;
+	where region="Canada";
+	Profit=Sales-Returns;
+run;
 
-prc print data=canadashoes;run;
+proc print data=canadashoes;
+run;
