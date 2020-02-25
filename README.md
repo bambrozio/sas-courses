@@ -55,3 +55,24 @@ proc means data=work.EU_OCC mean sum;
 run;
 ```
 1. Right click in the file, and "Run".
+
+---
+
+# SAS on Jupyter Notebooks
+> Assume you have miniconda installed. If not, [do it](https://docs.conda.io/en/latest/miniconda.html).
+1. Create a virtual environment to accomodate your Data Science tools:
+```
+$ conda create -n ds_env r-essentials r-base python=3.6 -y
+$ conda activate ds_env
+(ds_env)$ pip install sas_kernel notebook pandas
+```
+1. 
+```
+cp /Users/bambrozi/miniconda3/envs/ds_env/lib/python3.6/site-packages/saspy/sascfg.py /Users/bambrozi/miniconda3/envs/ds_env/lib/python3.6/site-packages/saspy/sascfg_personal.py
+```
+
+1. Start the Jupyter notebook server:
+```
+(ds_env)$ jupyter notebook
+```
+1. You should be able to run SAS in it. (See in the right upper corner the button "new" with the option "sas").
