@@ -1,5 +1,6 @@
 # SAS & WPS
 Content generated from the course SAS programming courses. https://support.sas.com/training/us/paths/prg.html, but implemented and tested with WPS.
+> New version: https://vle.sas.com/mod/scorm/player.php?a=8503&currentorg=ORG-EPG1V2&scoid=19216
 
 # WPS - Installation & Hello World
 > (For MAC, but should be easily adapted for any other platform)
@@ -71,8 +72,16 @@ $ conda activate ds_env
 cp /Users/bambrozi/miniconda3/envs/ds_env/lib/python3.6/site-packages/saspy/sascfg.py /Users/bambrozi/miniconda3/envs/ds_env/lib/python3.6/site-packages/saspy/sascfg_personal.py
 ```
 
+1. Edit the `sascfg_personal.py` as per 
+
 1. Start the Jupyter notebook server:
 ```
 (ds_env)$ jupyter notebook
 ```
 1. You should be able to run SAS in it. (See in the right upper corner the button "new" with the option "sas").
+
+---
+
+# SAS Programming 1: Essentials
+[Dashboard / My courses / SAS Programming 1: Essentials / Lessons / Lesson 3: Exploring and Validating Data](https://vle.sas.com/mod/scorm/player.php?a=8503&currentorg=ORG-EPG1V2&scoid=19216)
+
